@@ -13,18 +13,28 @@ Generar estilos:
   box-sizing: border-box;
 }
 
+:root {
+  --rich-black: #080708;
+  --blue-crayola: #3772ff;
+  --rose-madder: #df2935;
+  --sunglow: #fdca40;
+  --platinum: #e6e8e6;
+  --just-white: #ffffff;
+}
+
 html {
   font-size: 62.5%;
   font-family: "Roboto", sans-serif;
   font-weight: normal;
 }
 
+/* Creando estilos globales */
 a {
   text-decoration: none;
   cursor: pointer;
 }
 
-h1 {
+/* h1 {
   font-size: 40px;
   line-height: 1.5;
   letter-spacing: -0.2px;
@@ -34,31 +44,169 @@ h1 {
 
 h1 strong {
   color: #026fff;
-}
+} */
 
+/* Creando estilos para el header y derivados */
 .header-nav {
-  background-color: #1b2127;
-  color: white;
-  display: flex;
+  width: auto;
   height: 70px;
-  justify-content: space-between;
+
+  background-color: var(--rose-madder);
+  color: white;
 }
 
 .nav-container {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  /* color: #080708; */
+}
+
+.logo {
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+.logo img {
+  width: 50px;
+  height: 50px;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-right {
+  width: auto;
+  height: auto;
+
+  font-size: 1.5rem;
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-right .menu-item a {
+  margin-right: 25px;
+  color: var(--platinum);
+}
+
+/* Creando la seccion info general */
+main .info-section {
+  background-color: var(--rose-madder);
+  text-align: center;
+}
+
+main .info-section h1 {
+  margin: 0;
+  font-size: 4rem;
+  line-height: 1.4;
+  letter-spacing: -0.2rem;
+  color: var(--rich-black);
+}
+
+main .info-section h1 strong {
+  color: var(--just-white);
+}
+
+main .info-section .img-hero {
+  width: 140px;
+  height: 140px;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+
+main .portfolio-section {
+  background-color: var(--just-white);
+  padding: 20px;
+}
+
+main .portfolio-section .container {
   width: 1000px;
+  height: auto;
   margin: 0 auto;
-  display: inherit;
+}
+
+main .portfolio-section .container h2 {
+  margin-bottom: 40px;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+main .portfolio-project .project-details {
+  width: 500px;
+}
+
+main .portfolio-section .portfolio-project {
+  border: 1px solid var(--sunglow);
+  margin-bottom: 15px;
+  padding: 20px;
+  background: var(--platinum);
+  border-radius: 10px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+main .portfolio-project .project-title {
+  font-size: 2.5rem;
+}
+
+main .project-technology,
+.project-date,
+.project-live {
+  margin: 10px 0;
+}
+
+.project-technology {
+  font-size: 1.8rem;
+}
+.project-date {
+  font-size: 1.5rem;
+}
+
+.project-live {
+  font-size: 1.3rem;
+}
+
+.project-description {
+  font-size: 2rem;
+}
+
+.project-image {
+  width: 500px;
+  margin: 0;
+}
+
+.project-image img {
+  width: 500px;
+  height: auto;
+
+  border-radius: 5px;
+}
+
+main .contact-section {
+  background-color: var(--just-white);
+}
+
+/*.nav-container {
+  
+   display: inherit;
   justify-content: inherit;
   align-items: inherit;
   height: inherit;
-  flex-wrap: inherit;
-}
+  flex-wrap: inherit; 
+}*/
 
+/* 
 .nav-container figure {
   margin: 0;
 }
 
-/* Creando estilos para el menu */
+
 .menu-right {
   margin: 0;
   padding: 0;
@@ -69,10 +217,6 @@ h1 strong {
   height: inherit;
 }
 
-/* .menu-right {
-  height: inherit;
-} */
-
 .menu-right a {
   color: white;
   text-decoration: none;
@@ -81,11 +225,4 @@ h1 strong {
   align-items: center;
   height: inherit;
   padding: 0 10px;
-}
-
-/* .header-nav .nav-container .logo {
-  width: 50px;
-  height: 50px;
-
-}
- */
+} */
