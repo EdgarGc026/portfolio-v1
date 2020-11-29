@@ -34,18 +34,6 @@ a {
   cursor: pointer;
 }
 
-/* h1 {
-  font-size: 40px;
-  line-height: 1.5;
-  letter-spacing: -0.2px;
-  color: white;
-  margin: 0;
-}
-
-h1 strong {
-  color: #026fff;
-} */
-
 /* Creando estilos para el header y derivados */
 .header-nav {
   width: auto;
@@ -53,6 +41,12 @@ h1 strong {
 
   background-color: var(--rose-madder);
   color: white;
+
+  /* Agregando sombra al header */
+  -webkit-box-shadow: 0px 14px 10px -6px #000000;
+  box-shadow: 0px 14px 10px -6px #000000;
+  position: relative;
+  z-index: 1;
 }
 
 .nav-container {
@@ -119,6 +113,8 @@ main .info-section .img-hero {
   border-radius: 5px;
 }
 
+/* Creando los estilos para la seccion portafolio */
+
 main .portfolio-section {
   background-color: var(--just-white);
   padding: 20px;
@@ -138,6 +134,7 @@ main .portfolio-section .container h2 {
 
 main .portfolio-project .project-details {
   width: 500px;
+  padding-right: 5px;
 }
 
 main .portfolio-section .portfolio-project {
@@ -162,17 +159,23 @@ main .project-technology,
 }
 
 .project-technology {
+  font-weight: 400;
+  line-height: bold;
   font-size: 1.8rem;
 }
 .project-date {
-  font-size: 1.5rem;
+  font-weight: 400;
+  font-size: 1.6rem;
 }
 
 .project-live {
-  font-size: 1.3rem;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 1.4rem;
 }
 
 .project-description {
+  font-weight: 400;
   font-size: 2rem;
 }
 
@@ -188,41 +191,199 @@ main .project-technology,
   border-radius: 5px;
 }
 
+/* Creando la seccion contacto */
 main .contact-section {
   background-color: var(--just-white);
+  width: 600px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
-/*.nav-container {
-  
-   display: inherit;
-  justify-content: inherit;
-  align-items: inherit;
-  height: inherit;
-  flex-wrap: inherit; 
-}*/
-
-/* 
-.nav-container figure {
-  margin: 0;
+main .form-container {
+  width: 550px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
+.form-main h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  line-height: normal;
+}
 
-.menu-right {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  height: inherit;
-
+.form-main .input-form {
+  width: 500px;
+  margin: 0 auto;
+  border-radius: 6px;
+  border: 1px solid var(--platinum);
   display: flex;
-  height: inherit;
-}
-
-.menu-right a {
-  color: white;
-  text-decoration: none;
-
-  display: flex;
+  justify-content: center;
   align-items: center;
-  height: inherit;
-  padding: 0 10px;
+}
+
+.input-form input {
+  width: 460px;
+  height: 40px;
+  border: none;
+  outline: none;
+}
+
+.input-form:hover {
+  box-shadow: 0 1px 6px 0 var(--platinum);
+  border-color: var(--sunglow);
+}
+
+.input-form .input-email-icon {
+  background-image: url("https://www.iconpacks.net/icons/1/free-mail-icon-142-thumb.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+
+  width: 24px;
+  height: 24px;
+  margin-right: 12px;
+}
+
+/* Agregando estilos a la zona del boton */
+.input-form .button-form {
+  width: 530px;
+  margin: 0 auto;
+}
+
+.button-form button {
+  width: 140px;
+  height: 40px;
+  border: 0;
+
+  margin-top: 15px;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* .button-form button:hover {
+  cursor: pointer;
+  border: 1px solid var(--rich-black);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
+  color: var(var(--blue-crayola));
+  background-color: var(--);
+  background-image: -webkit-linear-gradient(
+    top,
+    var(--platinum),
+    var(--blue-crayola)
+  );
 } */
+
+/* Agregando Css a la seccion Más información  */
+main .about-section {
+  background-color: var(--rose-madder);
+  width: 100%;
+  height: 100%;
+}
+
+.about-generalMe {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.about-generalMe h2 {
+  color: var(--rich-black);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.about-generalMe .me-container {
+  width: 100%;
+  padding-top: 12px;
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+}
+
+.me-picture {
+  width: 400px;
+  height: 420px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.me-picture img {
+  width: 300px;
+  height: 400px;
+  margin: 0 auto;
+  border-radius: 8px;
+}
+
+.me-title {
+  color: var(--rich-black);
+  font-size: 2rem;
+  padding: 3px 0;
+}
+
+.me-datas {
+  color: var(--rich-black);
+  width: 500px;
+  height: auto;
+
+  margin: 0 auto;
+}
+
+.me-info {
+  color: var(--rich-black);
+  font-weight: 400;
+  line-height: bold;
+  font-size: 1.8rem;
+}
+
+.about-socialMedia {
+  width: 300px;
+  height: auto;
+  margin: 0 auto;
+  padding: 5px 0;
+}
+
+.social-media {
+  list-style: none;
+  display: flex;
+}
+
+.media-item {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.twitter-icon {
+  width: 60px;
+  height: 60px;
+
+  background-image: url("https://i.pinimg.com/originals/5f/d0/53/5fd0537ef0cbf9efd48c975209f74a8c.png");
+  background-position: center;
+  background-size: contain;
+}
+
+.linkedin-icon {
+  width: 60px;
+  height: 60px;
+
+  background-image: url("https://icons-for-free.com/iconfiles/png/512/black+line+linkedin+social+icon-1320191608689709544.png");
+  background-position: center;
+  background-size: contain;
+}
+
+.facebook-icon {
+  width: 60px;
+  height: 60px;
+
+  background-image: url("https://img.icons8.com/ios/452/facebook-new.png");
+  background-position: center;
+  background-size: contain;
+}

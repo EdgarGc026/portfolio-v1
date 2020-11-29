@@ -111,39 +111,59 @@
 
       <!-- Creacion de un formulario -->
       <section id="contact" class="contact-section">
-        <form action="#" method="POST" class="contact-form">
-          <h2>¿Deseas que desarrollemos un proyecto juntos?</h2>
-          <input
-            type="email"
-            name="email"
-            id="email"
-            placeholder="Déjame tu correo electronico"
-          />
-          <button class="btn-form">Enviar</button>
-        </form>
+        <div class="form-container">
+          <form action="#" method="POST" class="form-main">
+            <h2>¿Deseas que desarrollemos un proyecto juntos?</h2>
+            <div class="input-form">
+              <span class="input-email-icon"></span>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Déjame tu correo electronico"
+              />
+            </div>
+          </form>
+          <div class="button-form">
+            <button class="btn-form">Enviar</button>
+          </div>
+        </div>
       </section>
 
       <section class="about-section">
-        <h2>Mas info acerca de mi</h2>
         <article class="about-generalMe">
-          <figure class="me-picture">
-            <img src="" alt="Una foto chida del evento" />
-          </figure>
-          <h3 class="me-title">Algo chido de aqui xd</h3>
-          <p class="me-info">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
-            voluptates consequatur aliquam molestiae eum! Ipsa nulla dignissimos
-            similique velit accusantium quaerat, veritatis omnis ab nobis
-            ratione quidem quam laudantium minus.
-          </p>
-          <a class="me-more" href="#">Ver mas</a>
+          <h2>Mas info acerca de mi</h2>
+          <div class="me-container">
+            <figure class="me-picture">
+              <img src="./image/fotoInfo.jpg" alt="Una foto chida del evento" />
+            </figure>
+            <div class="me-datas">
+              <h3 class="me-title">Algo chido de aqui xd</h3>
+              <p class="me-info">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
+                voluptates consequatur aliquam molestiae eum! Ipsa nulla
+                dignissimos similique velit accusantium quaerat, veritatis omnis
+                ab nobis ratione quidem quam laudantium minus.
+              </p>
+            </div>
+          </div>
+          <div class="about-socialMedia">
+            <ul class="social-media">
+              <li class="media-item">
+                <a href="#" class="twitter-icon"></a>
+              </li>
+              <li class="media-item">
+                <a href="#" class="linkedin-icon"></a>
+              </li>
+              <li class="media-item">
+                <a href="#" class="facebook-icon"></a>
+              </li>
+            </ul>
+          </div>
         </article>
       </section>
     </main>
 
-    <footer>
-      <div class="footer-left">Aqui habra datos de interes</div>
-      <div class="footer-right">Aqui estaran mis redes sociales</div>
-    </footer>
+    <footer></footer>
   </body>
 </html>
