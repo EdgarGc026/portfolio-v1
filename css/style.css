@@ -104,7 +104,7 @@ main {
 main .info-section {
   width: 100%;
   min-width: 36rem;
-  max-width: 90rem;
+
   height: auto;
 
   background-color: var(--rose-madder);
@@ -143,7 +143,7 @@ main .info-section .img-hero {
 main .portfolio-section {
   width: 100%;
   min-width: 36rem;
-  max-width: 90rem;
+  /* max-width: 90rem; */
   background-color: var(--just-white);
   padding: 0.5rem;
 }
@@ -161,29 +161,33 @@ main .portfolio-section .container h2 {
   font-weight: bold;
 }
 
+main .portfolio-project .project-details {
+  display: inherit;
+}
+
 .project-image {
-  width: auto;
-  height: auto;
-  text-align: center;
+  width: 100%;
+  height: 100%;
+  margin: 0.5rem auto;
 }
 
 .project-image img {
-  width: 90%;
-  height: 90%;
-  margin: 0;
+  width: 27rem;
+  height: 20rem;
 
   border-radius: 5px;
 }
 
+main .portfolio-section .portfolio-project {
+  border: 1px solid var(--sunglow);
+  margin-bottom: 1.5rem;
+  padding: 20px;
+  background: var(--platinum);
+  border-radius: 10px;
+}
+
 /* 
 
-
-
-
-main .portfolio-project .project-details {
-  width: 500px;
-  padding-right: 5px;
-}
 
 main .portfolio-section .portfolio-project {
   border: 1px solid var(--sunglow);
@@ -196,6 +200,11 @@ main .portfolio-section .portfolio-project {
   align-items: center;
   justify-content: space-between;
 }
+
+
+
+
+
 
 main .portfolio-project .project-title {
   font-size: 2.5rem;
