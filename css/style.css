@@ -7,6 +7,7 @@ Generar estilos:
     5. Miselaneos u otros
 */
 
+/* Configuracion global */
 * {
   margin: 0;
   padding: 0;
@@ -27,43 +28,48 @@ html {
   font-family: "Roboto", sans-serif;
   font-weight: normal;
 }
+/* ---------- */
 
 /* Creando estilos globales */
 a {
   text-decoration: none;
   cursor: pointer;
 }
+/* ---------- */
 
 /* Creando estilos para el header y derivados */
 .header-nav {
-  width: auto;
-  height: 70px;
+  width: 100%;
+  min-width: 32rem;
+  height: 7rem;
 
   background-color: var(--rose-madder);
   color: white;
 
   /* Agregando sombra al header */
-  -webkit-box-shadow: 0px 14px 10px -6px #000000;
-  box-shadow: 0px 14px 10px -6px #000000;
+  -webkit-box-shadow: 0rem 1.4rem 1rem -0.6rem #000000;
+  box-shadow: 0rem 1.4rem 1rem -0.6rem #000000;
   position: relative;
   z-index: 1;
 }
 
 .nav-container {
+  width: auto;
+  height: 100%;
+
   display: flex;
   justify-content: space-between;
   text-align: center;
-  /* color: #080708; */
 }
 
 .logo {
-  margin-top: 5px;
-  margin-left: 5px;
+  padding-right: 0.5rem;
+  margin: 0.5rem 0.5rem 0.5rem 0.5rem;
 }
 
 .logo img {
-  width: 50px;
-  height: 50px;
+  width: 5rem;
+  height: 5rem;
 }
 
 .nav-menu {
@@ -73,9 +79,6 @@ a {
 }
 
 .menu-right {
-  width: auto;
-  height: auto;
-
   font-size: 1.5rem;
   display: flex;
   list-style: none;
@@ -84,18 +87,35 @@ a {
 }
 
 .menu-right .menu-item a {
-  margin-right: 25px;
+  margin-right: 2.5rem;
   color: var(--platinum);
 }
+/* ---------- */
+
+/* Creando estilos globales */
+main {
+  width: 100%;
+  height: auto;
+  background-color: var(--just-white);
+}
+/* ---------- */
 
 /* Creando la seccion info general */
 main .info-section {
+  width: 100%;
+  min-width: 36rem;
+  max-width: 90rem;
+  height: auto;
+
   background-color: var(--rose-madder);
   text-align: center;
+  padding-bottom: 0.5rem;
 }
 
 main .info-section h1 {
-  margin: 0;
+  padding-bottom: 0.5rem;
+
+  margin: 0 auto;
   font-size: 4rem;
   line-height: 1.4;
   letter-spacing: -0.2rem;
@@ -107,30 +127,58 @@ main .info-section h1 strong {
 }
 
 main .info-section .img-hero {
-  width: 140px;
-  height: 140px;
-  margin-top: 20px;
-  border-radius: 5px;
+  display: inline-block;
+  width: 165px;
+  height: 165px;
+  margin: 0 auto;
+  padding-bottom: 0.5rem;
+  box-shadow: 0 0.4rem 0.8rem 0 rgba(0, 0, 0, 0.2),
+    0 0.6rem 2rem 0 rgba(0, 0, 0, 0.19);
+  border-radius: 5%;
 }
+/* ---------- */
 
 /* Creando los estilos para la seccion portafolio */
 
 main .portfolio-section {
+  width: 100%;
+  min-width: 36rem;
+  max-width: 90rem;
   background-color: var(--just-white);
-  padding: 20px;
+  padding: 0.5rem;
 }
 
 main .portfolio-section .container {
-  width: 1000px;
+  width: 90%;
   height: auto;
   margin: 0 auto;
 }
 
 main .portfolio-section .container h2 {
-  margin-bottom: 40px;
+  text-align: center;
+  margin-bottom: 2rem;
   font-size: 3rem;
   font-weight: bold;
 }
+
+.project-image {
+  width: auto;
+  height: auto;
+  text-align: center;
+}
+
+.project-image img {
+  width: 90%;
+  height: 90%;
+  margin: 0;
+
+  border-radius: 5px;
+}
+
+/* 
+
+
+
 
 main .portfolio-project .project-details {
   width: 500px;
@@ -148,6 +196,7 @@ main .portfolio-section .portfolio-project {
   align-items: center;
   justify-content: space-between;
 }
+
 main .portfolio-project .project-title {
   font-size: 2.5rem;
 }
@@ -179,20 +228,12 @@ main .project-technology,
   font-size: 2rem;
 }
 
-.project-image {
-  width: 500px;
-  margin: 0;
-}
 
-.project-image img {
-  width: 500px;
-  height: auto;
 
-  border-radius: 5px;
-}
+*/
 
 /* Creando la seccion contacto */
-main .contact-section {
+/* main .contact-section {
   background-color: var(--just-white);
   width: 600px;
   margin: 0 auto;
@@ -243,7 +284,7 @@ main .form-container {
   width: 24px;
   height: 24px;
   margin-right: 12px;
-}
+} */
 
 /* Agregando estilos a la zona del boton */
 .input-form .button-form {
@@ -252,11 +293,11 @@ main .form-container {
 }
 
 .button-form button {
-  width: 140px;
-  height: 40px;
+  width: 14rem;
+  height: 4rem;
   border: 0;
 
-  margin-top: 15px;
+  margin-top: 1.5rem;
   font-size: 1.5rem;
   cursor: pointer;
 }
@@ -278,10 +319,13 @@ main .form-container {
 main .about-section {
   background-color: var(--rose-madder);
   width: 100%;
-  height: 100%;
+  height: auto;
 }
 
 .about-generalMe {
+  width: 90%;
+  height: auto;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -298,15 +342,15 @@ main .about-section {
 
 .about-generalMe .me-container {
   width: 100%;
-  padding-top: 12px;
+  padding-top: 1.2rem;
   display: inline-block;
   justify-content: center;
   align-items: center;
 }
 
 .me-picture {
-  width: 400px;
-  height: 420px;
+  width: 80%;
+  height: auto;
   margin: 0 auto;
   display: flex;
   justify-content: center;
@@ -317,18 +361,20 @@ main .about-section {
   width: 300px;
   height: 400px;
   margin: 0 auto;
-  border-radius: 8px;
+  border-radius: 0.8rem;
+  box-shadow: 0 0.4rem 0.8rem 0 rgba(0, 0, 0, 0.2),
+    0 0.6rem 2rem 0 rgba(0, 0, 0, 0.19);
 }
 
 .me-title {
   color: var(--rich-black);
   font-size: 2rem;
-  padding: 3px 0;
+  padding: 0.3rem 0;
 }
 
 .me-datas {
   color: var(--rich-black);
-  width: 500px;
+  width: 90%;
   height: auto;
 
   margin: 0 auto;
