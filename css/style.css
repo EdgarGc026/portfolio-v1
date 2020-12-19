@@ -168,52 +168,33 @@ main .portfolio-project .project-details {
 .project-image {
   width: 100%;
   height: 100%;
-  margin: 0.5rem auto;
+  padding-left: 0.3rem;
 }
 
 .project-image img {
-  width: 27rem;
-  height: 20rem;
+  width: 280px;
+  height: 220px;
 
   border-radius: 5px;
+  margin: 0.5rem auto;
 }
 
 main .portfolio-section .portfolio-project {
   border: 1px solid var(--sunglow);
   margin-bottom: 1.5rem;
-  padding: 20px;
+  padding: 1.2rem;
   background: var(--platinum);
-  border-radius: 10px;
+  border-radius: 1rem;
 }
-
-/* 
-
-
-main .portfolio-section .portfolio-project {
-  border: 1px solid var(--sunglow);
-  margin-bottom: 15px;
-  padding: 20px;
-  background: var(--platinum);
-  border-radius: 10px;
-
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-
-
-
-
 
 main .portfolio-project .project-title {
-  font-size: 2.5rem;
+  font-size: 2.4rem;
 }
 
 main .project-technology,
 .project-date,
 .project-live {
-  margin: 10px 0;
+  margin: 0.6rem 0;
 }
 
 .project-technology {
@@ -221,6 +202,7 @@ main .project-technology,
   line-height: bold;
   font-size: 1.8rem;
 }
+
 .project-date {
   font-weight: 400;
   font-size: 1.6rem;
@@ -237,23 +219,18 @@ main .project-technology,
   font-size: 2rem;
 }
 
-
-
-*/
-
 /* Creando la seccion contacto */
-/* main .contact-section {
+main .contact-section {
   background-color: var(--just-white);
-  width: 600px;
+  width: 100%;
   margin: 0 auto;
-  padding: 20px;
+  padding: 1.4rem;
 }
 
 main .form-container {
-  width: 550px;
+  width: 90%;
   margin: 0 auto;
-  margin-bottom: 20px;
-  text-align: center;
+  margin-bottom: 1.4rem;
 }
 
 .form-main h2 {
@@ -263,9 +240,9 @@ main .form-container {
 }
 
 .form-main .input-form {
-  width: 500px;
-  margin: 0 auto;
-  border-radius: 6px;
+  width: 90%;
+  margin: 4px auto;
+  border-radius: 0.6rem;
   border: 1px solid var(--platinum);
   display: flex;
   justify-content: center;
@@ -273,14 +250,14 @@ main .form-container {
 }
 
 .input-form input {
-  width: 460px;
-  height: 40px;
+  width: 19rem;
+  height: 4.5rem;
   border: none;
   outline: none;
 }
 
 .input-form:hover {
-  box-shadow: 0 1px 6px 0 var(--platinum);
+  box-shadow: 0 0.1rem 0.6rem 0 var(--platinum);
   border-color: var(--sunglow);
 }
 
@@ -290,15 +267,24 @@ main .form-container {
   background-position: center;
   background-size: contain;
 
-  width: 24px;
-  height: 24px;
-  margin-right: 12px;
-} */
+  width: 28px;
+  height: 28px;
+  margin-right: 1rem;
+}
+
+/* 
+
+ */
 
 /* Agregando estilos a la zona del boton */
 .input-form .button-form {
-  width: 530px;
+  width: 90%;
   margin: 0 auto;
+}
+
+.button-form {
+  display: flex;
+  justify-content: center;
 }
 
 .button-form button {
@@ -306,15 +292,21 @@ main .form-container {
   height: 4rem;
   border: 0;
 
-  margin-top: 1.5rem;
+  margin-top: 1.2rem;
   font-size: 1.5rem;
   cursor: pointer;
+}
+
+.button-form button:hover {
+  cursor: pointer;
+  border: 1px solid var(--rich-black);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
 }
 
 /* .button-form button:hover {
   cursor: pointer;
   border: 1px solid var(--rich-black);
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
+  
   color: var(var(--blue-crayola));
   background-color: var(--);
   background-image: -webkit-linear-gradient(
@@ -397,10 +389,10 @@ main .about-section {
 }
 
 .about-socialMedia {
-  width: 300px;
+  width: 30rem;
   height: auto;
   margin: 0 auto;
-  padding: 5px 0;
+  padding: 0.5rem 0;
 }
 
 .social-media {
@@ -413,7 +405,7 @@ main .about-section {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-right: 20px;
+  margin-right: 2rem;
 }
 
 .twitter-icon {
