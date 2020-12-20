@@ -197,6 +197,10 @@ main .project-technology,
   margin: 0.6rem 0;
 }
 
+.project-live {
+  cursor: pointer;
+}
+
 .project-technology {
   font-weight: 400;
   line-height: bold;
@@ -384,8 +388,8 @@ main .about-section {
 .me-info {
   color: var(--rich-black);
   font-weight: 400;
-  line-height: bold;
   font-size: 1.8rem;
+  text-align: start;
 }
 
 .about-socialMedia {
