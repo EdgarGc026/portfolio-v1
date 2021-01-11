@@ -95,7 +95,7 @@ a {
 /* Creando estilos globales */
 main {
   width: 100%;
-  /* height: auto; */
+
   background-color: var(--just-white);
 }
 /* ---------- */
@@ -104,9 +104,7 @@ main {
 main .info-section {
   width: 100%;
   min-width: 36rem;
-
   height: auto;
-
   background-color: var(--rose-madder);
   text-align: center;
   padding-bottom: 0.5rem;
@@ -114,7 +112,6 @@ main .info-section {
 
 main .info-section h1 {
   padding-bottom: 0.5rem;
-
   margin: 0 auto;
   font-size: 4rem;
   line-height: 1.4;
@@ -143,7 +140,6 @@ main .info-section .img-hero {
 main .portfolio-section {
   width: 100%;
   min-width: 36rem;
-  /* max-width: 90rem; */
   background-color: var(--just-white);
   padding: 0.5rem;
 }
@@ -179,7 +175,6 @@ main .portfolio-project .project-details {
 .project-image img {
   width: 280px;
   height: 220px;
-
   border-radius: 5px;
   margin: 0.5rem auto;
 }
@@ -280,10 +275,6 @@ main .form-container {
   height: 28px;
   margin-right: 1rem;
 }
-
-/* 
-
- */
 
 /* Agregando estilos a la zona del boton */
 .input-form .button-form {
@@ -386,7 +377,6 @@ main .about-section {
   color: var(--rich-black);
   width: 90%;
   height: auto;
-
   margin: 0 auto;
 }
 
@@ -444,23 +434,14 @@ main .about-section {
   background-size: contain;
 }
 
-/* Media queries  */
-/* @media (max-width: 768px) {
-  .project-image {
-    width: auto;
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-end;
-    flex-direction: row;
-  }
-} */
-
 @media (min-width: 800px) {
   .portfolio-project {
+    width: 80%;
+    margin: 0 auto;
     display: flex;
   }
   .project-details {
-    width: 60%;
+    width: 950px;
     display: flex;
     flex-direction: column;
     align-items: baseline;
@@ -468,12 +449,12 @@ main .about-section {
   }
 
   .project-image img {
-    width: 100%;
+    width: 340px;
     height: 220px;
   }
 
   .project-image {
-    width: 40%;
+    max-width: 380px;
     display: flex;
   }
 }
