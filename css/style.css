@@ -438,52 +438,6 @@ form input[type="submit"]:hover {
   background: var(--soft-blue-crayola);
 }
 
-/* Creaciond de las skills 
-.skills-section {
-  width: 80%;
-  margin: 0 auto;
-}
-
-.skills__container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.skills__container--card {
-  outline: 1px solid var(--eerie-black);
-  margin-bottom: 2rem;
-}
-
-.card__img-top {
-  outline: 1px solid black;
-}
-
-.card__img-top img {
-  width: 500px;
-  height: 250px;
-}
-
-.card__body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: var(--culture);
-}
-
-.card__body--title {
-  font-size: 2.4rem;
-  color: var(--eerie-black);
-}
-
-.card__body--description {
-  font-weight: 400;
-  font-size: 2rem;
-}
-
-Final de las skills (cards) */
-
 .footer {
   display: flex;
   justify-content: center;
