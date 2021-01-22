@@ -15,12 +15,13 @@ Generar estilos:
 }
 
 :root {
-  --rich-black: #080708;
+  --eerie-black: #080708;
   --blue-crayola: #3772ff;
+  --soft-blue-crayola: #026fff;
   --rose-madder: #df2935;
-  --sunglow: #fdca40;
-  --platinum: #e6e8e6;
   --just-white: #ffffff;
+  --culture: #fafafa;
+  /* --sunglow: #fdca40; */
 }
 
 html {
@@ -43,7 +44,7 @@ a {
   min-width: 32rem;
   height: 7rem;
 
-  background-color: var(--rose-madder);
+  background-color: var(--eerie-black);
   color: white;
 
   /* Agregando sombra al header */
@@ -88,14 +89,13 @@ a {
 
 .menu-right .menu-item a {
   margin-right: 2.5rem;
-  color: var(--platinum);
+  color: var(--culture);
 }
 /* ---------- */
 
 /* Creando estilos globales */
 main {
   width: 100%;
-
   background-color: var(--just-white);
 }
 /* ---------- */
@@ -105,7 +105,7 @@ main .info-section {
   width: 100%;
   min-width: 36rem;
   height: auto;
-  background-color: var(--rose-madder);
+  background-color: var(--eerie-black);
   text-align: center;
   padding-bottom: 0.5rem;
 }
@@ -116,11 +116,11 @@ main .info-section h1 {
   font-size: 4rem;
   line-height: 1.4;
   letter-spacing: -0.2rem;
-  color: var(--rich-black);
+  color: var(--just-white);
 }
 
 main .info-section h1 strong {
-  color: var(--just-white);
+  color: var(--blue-crayola);
 }
 
 main .info-section .img-hero {
@@ -135,12 +135,130 @@ main .info-section .img-hero {
 }
 /* ---------- */
 
+/* Agregando Css a la seccion Más información  */
+main .about-section {
+  background-color: var(--eerie-black);
+  width: 100%;
+  height: auto;
+}
+
+.about-generalMe {
+  width: 90%;
+  height: auto;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.about-generalMe h2 {
+  color: var(--just-white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.about-generalMe .me-container {
+  width: 100%;
+  padding-top: 1.2rem;
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+}
+
+.me-picture {
+  width: 80%;
+  height: auto;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.me-picture img {
+  width: 300px;
+  height: 400px;
+  margin: 0 auto;
+  border-radius: 0.8rem;
+  box-shadow: 0 0.4rem 0.8rem 0 rgba(0, 0, 0, 0.2),
+    0 0.6rem 2rem 0 rgba(0, 0, 0, 0.19);
+}
+
+.me-title {
+  color: var(--just-white);
+  font-size: 2rem;
+  padding: 0.3rem 0;
+}
+
+.me-datas {
+  color: var(--just-white);
+  width: 90%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.me-info {
+  color: var(--just-white);
+  font-weight: 400;
+  font-size: 1.8rem;
+  text-align: start;
+}
+
+.about-socialMedia {
+  width: 30rem;
+  height: auto;
+  margin: 0 auto;
+  padding: 0.5rem 0;
+}
+
+.social-media {
+  list-style: none;
+  display: flex;
+}
+
+.media-item {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 2rem;
+}
+
+.twitter-icon {
+  width: 60px;
+  height: 60px;
+
+  background-image: url("../image/twitter.svg");
+  background-position: center;
+  background-size: contain;
+}
+
+.github-icon {
+  width: 60px;
+  height: 60px;
+
+  background-image: url("../image/github.svg");
+  background-position: center;
+  background-size: contain;
+}
+
+.facebook-icon {
+  width: 60px;
+  height: 60px;
+
+  background-image: url("../image/facebook.svg");
+  background-position: center;
+  background-size: contain;
+}
+
 /* Creando los estilos para la seccion portafolio */
 
 main .portfolio-section {
   width: 100%;
   min-width: 36rem;
-  background-color: var(--just-white);
+  background-color: var(--culture);
   padding: 0.5rem;
 }
 
@@ -155,6 +273,7 @@ main .portfolio-section .container h2 {
   margin-bottom: 2rem;
   font-size: 3rem;
   font-weight: bold;
+  color: var(--soft-blue-crayola);
 }
 
 main .portfolio-project .project-details {
@@ -180,10 +299,10 @@ main .portfolio-project .project-details {
 }
 
 main .portfolio-section .portfolio-project {
-  border: 1px solid var(--sunglow);
+  border: 1px solid var(--eerie-black);
   margin-bottom: 1.5rem;
   padding: 1.2rem;
-  background: var(--platinum);
+  background: var(--just-white);
   border-radius: 1rem;
 }
 
@@ -223,219 +342,64 @@ main .project-technology,
   font-size: 2rem;
 }
 
-/* Creando la seccion contacto */
-main .contact-section {
-  background-color: var(--just-white);
-  width: 100%;
+/* Creaciond de las skills 
+.skills-section {
+  width: 80%;
   margin: 0 auto;
-  padding: 1.4rem;
 }
 
-main .form-container {
-  width: 90%;
-  margin: 0 auto;
+.skills__container {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 1.4rem;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
-.form-main h2 {
-  font-size: 3rem;
-  font-weight: bold;
-  line-height: normal;
+.skills__container--card {
+  outline: 1px solid var(--eerie-black);
+  margin-bottom: 2rem;
 }
 
-.form-main .input-form {
-  width: 90%;
-  margin: 4px auto;
-  border-radius: 0.6rem;
-  border: 1px solid var(--platinum);
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.card__img-top {
+  outline: 1px solid black;
 }
 
-.input-form input {
-  width: 26rem;
-  height: 4.8rem;
-  border: none;
-  outline: none;
+.card__img-top img {
+  width: 500px;
+  height: 250px;
 }
 
-.input-form:hover {
-  box-shadow: 0 0.1rem 0.6rem 0 var(--platinum);
-  border-color: var(--sunglow);
-}
-
-.input-form .input-email-icon {
-  background-image: url("https://www.iconpacks.net/icons/1/free-mail-icon-142-thumb.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-
-  width: 28px;
-  height: 28px;
-  margin-right: 1rem;
-}
-
-/* Agregando estilos a la zona del boton */
-.input-form .button-form {
-  width: 90%;
-  margin: 0 auto;
-}
-
-.button-form {
-  display: flex;
-  justify-content: center;
-}
-
-.button-form button {
-  width: 14rem;
-  height: 4rem;
-  border: 0;
-
-  margin-top: 1.2rem;
-  font-size: 1.5rem;
-  cursor: pointer;
-}
-
-.button-form button:hover {
-  cursor: pointer;
-  border: 1px solid var(--rich-black);
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
-}
-
-/* .button-form button:hover {
-  cursor: pointer;
-  border: 1px solid var(--rich-black);
-  
-  color: var(var(--blue-crayola));
-  background-color: var(--);
-  background-image: -webkit-linear-gradient(
-    top,
-    var(--platinum),
-    var(--blue-crayola)
-  );
-} */
-
-/* Agregando Css a la seccion Más información  */
-main .about-section {
-  background-color: var(--rose-madder);
-  width: 100%;
-  height: auto;
-}
-
-.about-generalMe {
-  width: 90%;
-  height: auto;
-  margin: 0 auto;
+.card__body {
   display: flex;
   flex-direction: column;
-  text-align: center;
-}
-.about-generalMe h2 {
-  color: var(--rich-black);
-  display: flex;
-  justify-content: center;
   align-items: center;
-
-  font-size: 3rem;
-  font-weight: bold;
-}
-
-.about-generalMe .me-container {
-  width: 100%;
-  padding-top: 1.2rem;
-  display: inline-block;
   justify-content: center;
-  align-items: center;
+  background-color: var(--culture);
 }
 
-.me-picture {
-  width: 80%;
-  height: auto;
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.card__body--title {
+  font-size: 2.4rem;
+  color: var(--eerie-black);
 }
 
-.me-picture img {
-  width: 300px;
-  height: 400px;
-  margin: 0 auto;
-  border-radius: 0.8rem;
-  box-shadow: 0 0.4rem 0.8rem 0 rgba(0, 0, 0, 0.2),
-    0 0.6rem 2rem 0 rgba(0, 0, 0, 0.19);
-}
-
-.me-title {
-  color: var(--rich-black);
-  font-size: 2rem;
-  padding: 0.3rem 0;
-}
-
-.me-datas {
-  color: var(--rich-black);
-  width: 90%;
-  height: auto;
-  margin: 0 auto;
-}
-
-.me-info {
-  color: var(--rich-black);
+.card__body--description {
   font-weight: 400;
-  font-size: 1.8rem;
-  text-align: start;
+  font-size: 2rem;
 }
 
-.about-socialMedia {
-  width: 30rem;
-  height: auto;
-  margin: 0 auto;
-  padding: 0.5rem 0;
-}
+Final de las skills (cards) */
 
-.social-media {
-  list-style: none;
-  display: flex;
-}
-
-.media-item {
-  margin: 0 auto;
+.footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-right: 2rem;
+  background: var(--eerie-black);
+  color: var(--just-white);
+  height: 6rem;
+  margin-top: auto;
+  font-size: 1.4rem;
 }
 
-.twitter-icon {
-  width: 60px;
-  height: 60px;
-
-  background-image: url("https://i.pinimg.com/originals/5f/d0/53/5fd0537ef0cbf9efd48c975209f74a8c.png");
-  background-position: center;
-  background-size: contain;
-}
-
-.linkedin-icon {
-  width: 60px;
-  height: 60px;
-
-  background-image: url("https://icons-for-free.com/iconfiles/png/512/black+line+linkedin+social+icon-1320191608689709544.png");
-  background-position: center;
-  background-size: contain;
-}
-
-.facebook-icon {
-  width: 60px;
-  height: 60px;
-
-  background-image: url("https://img.icons8.com/ios/452/facebook-new.png");
-  background-position: center;
-  background-size: contain;
-}
+/* Responsive */
 
 @media (min-width: 800px) {
   .portfolio-project {
