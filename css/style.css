@@ -1,8 +1,8 @@
 /* 
 Generar estilos:
-    1. Posicionamiento (widht, height, padding, margin, etc)
-    2. Modelo de caja (box model)
-    3. Tipografia (tam fuente, fuente, etc)
+    1. Posicionamiento (widht, height, display, position)
+    2. Modelo de caja (margin, padding, border, content)
+    3. Tipografia (tam fuente, fuente, tipo de fuentes, etc)
     4. Visuales (shadow box, border radius, etc)
     5. Miselaneos u otros
 */
@@ -21,7 +21,6 @@ Generar estilos:
   --rose-madder: #df2935;
   --just-white: #ffffff;
   --culture: #fafafa;
-  /* --sunglow: #fdca40; */
 }
 
 html {
@@ -43,6 +42,7 @@ a {
   width: 100%;
   min-width: 32rem;
   height: 7rem;
+  position: relative;
 
   background-color: var(--eerie-black);
   color: white;
@@ -50,7 +50,6 @@ a {
   /* Agregando sombra al header */
   -webkit-box-shadow: 0rem 1.4rem 1rem -0.6rem #000000;
   box-shadow: 0rem 1.4rem 1rem -0.6rem #000000;
-  position: relative;
   z-index: 1;
 }
 
@@ -64,8 +63,8 @@ a {
 }
 
 .logo {
-  padding-right: 0.5rem;
   margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+  padding-right: 0.5rem;
 }
 
 .logo img {
@@ -80,11 +79,11 @@ a {
 }
 
 .menu-right {
-  font-size: 1.5rem;
   display: flex;
   list-style: none;
   justify-content: center;
   align-items: center;
+  font-size: 1.5rem;
 }
 
 .menu-right .menu-item a {
@@ -105,14 +104,14 @@ main .info-section {
   width: 100%;
   min-width: 36rem;
   height: auto;
+  padding-bottom: 0.5rem;
   background-color: var(--eerie-black);
   text-align: center;
-  padding-bottom: 0.5rem;
 }
 
 main .info-section h1 {
-  padding-bottom: 0.5rem;
   margin: 0 auto;
+  padding-bottom: 0.5rem;
   font-size: 4rem;
   line-height: 1.4;
   letter-spacing: -0.2rem;
@@ -124,9 +123,9 @@ main .info-section h1 strong {
 }
 
 main .info-section .img-hero {
-  display: inline-block;
   width: 165px;
   height: 165px;
+  display: inline-block;
   margin: 0 auto;
   padding-bottom: 0.5rem;
   box-shadow: 0 0.4rem 0.8rem 0 rgba(0, 0, 0, 0.2),
@@ -137,44 +136,44 @@ main .info-section .img-hero {
 
 /* Agregando Css a la seccion Más información  */
 main .about-section {
-  background-color: var(--eerie-black);
   width: 100%;
   height: auto;
+  background-color: var(--eerie-black);
 }
 
 .about-generalMe {
   width: 90%;
   height: auto;
-  margin: 0 auto;
   display: flex;
   flex-direction: column;
   text-align: center;
+  margin: 0 auto;
 }
 .about-generalMe h2 {
-  color: var(--just-white);
   display: flex;
   justify-content: center;
   align-items: center;
 
   font-size: 3rem;
   font-weight: bold;
+  color: var(--just-white);
 }
 
 .about-generalMe .me-container {
   width: 100%;
-  padding-top: 1.2rem;
   display: inline-block;
   justify-content: center;
   align-items: center;
+  padding-top: 1.2rem;
 }
 
 .me-picture {
   width: 80%;
   height: auto;
-  margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0 auto;
 }
 
 .me-picture img {
@@ -187,23 +186,23 @@ main .about-section {
 }
 
 .me-title {
+  padding: 0.3rem 0;
   color: var(--just-white);
   font-size: 2rem;
-  padding: 0.3rem 0;
 }
 
 .me-datas {
-  color: var(--just-white);
   width: 90%;
   height: auto;
   margin: 0 auto;
+  color: var(--just-white);
 }
 
 .me-info {
-  color: var(--just-white);
-  font-weight: 400;
   font-size: 1.8rem;
+  font-weight: 400;
   text-align: start;
+  color: var(--just-white);
 }
 
 .about-socialMedia {
@@ -214,15 +213,15 @@ main .about-section {
 }
 
 .social-media {
-  list-style: none;
   display: flex;
+  list-style: none;
 }
 
 .media-item {
-  margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0 auto;
   margin-right: 2rem;
 }
 
@@ -258,8 +257,8 @@ main .about-section {
 main .portfolio-section {
   width: 100%;
   min-width: 36rem;
-  background-color: var(--culture);
   padding: 0.5rem;
+  background-color: var(--culture);
 }
 
 main .portfolio-section .container {
@@ -283,27 +282,27 @@ main .portfolio-project .project-details {
 .project-image {
   width: 100%;
   height: 100%;
-  padding-left: 0.3rem;
   display: flex;
-  margin: auto;
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  margin: auto;
+  padding-left: 0.3rem;
 }
 
 .project-image img {
   width: 280px;
   height: 220px;
-  border-radius: 5px;
   margin: 0.5rem auto;
+  border-radius: 5px;
 }
 
 main .portfolio-section .portfolio-project {
-  border: 1px solid var(--eerie-black);
   margin-bottom: 1.5rem;
   padding: 1.2rem;
   background: var(--just-white);
   border-radius: 1rem;
+  border: 1px solid var(--eerie-black);
 }
 
 main .portfolio-project .project-title {
@@ -321,25 +320,25 @@ main .project-technology,
 }
 
 .project-technology {
+  font-size: 1.8rem;
   font-weight: 400;
   line-height: bold;
-  font-size: 1.8rem;
 }
 
 .project-date {
-  font-weight: 400;
   font-size: 1.6rem;
+  font-weight: 400;
 }
 
 .project-live {
-  font-style: italic;
-  font-weight: 400;
   font-size: 1.4rem;
+  font-weight: 400;
+  font-style: italic;
 }
 
 .project-description {
-  font-weight: 400;
   font-size: 2rem;
+  font-weight: 400;
 }
 
 /* Creando la seccion del contacto */
@@ -351,6 +350,7 @@ main .project-technology,
 }
 
 .contact-section h2 {
+  margin-top: 2rem;
   margin-bottom: 2rem;
   text-align: center;
   font-size: 3rem;
@@ -381,9 +381,20 @@ main .project-technology,
   align-items: center;
 }
 
+form {
+  width: 80%;
+  margin: 2rem 0;
+  padding: 2rem;
+  background: var(--just-white);
+  overflow: hidden;
+  box-shadow: 0 0 0.3rem grey;
+  border-top: 0.4rem solid var(--soft-blue-crayola);
+}
+
 form input[type="text"],
 form input[type="email"],
-form input[type="password"] {
+form input[type="password"],
+form textarea {
   max-width: 100%;
   min-width: 90%;
   height: 4rem;
@@ -391,17 +402,7 @@ form input[type="password"] {
   margin-bottom: 1.2rem;
   border-radius: 0.5rem;
   outline: none;
-  color: #141938;
-}
-
-form {
-  width: 100%;
-  margin: 2rem 0;
-  padding: 2rem;
-  background: #fff;
-  overflow: hidden;
-  box-shadow: 0 0 0.3rem grey;
-  border-top: 0.4rem solid #536dfe;
+  color: var(--eerie-black);
 }
 
 form textarea {
@@ -439,13 +440,13 @@ form input[type="submit"]:hover {
 }
 
 .footer {
+  height: 6rem;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: auto;
   background: var(--eerie-black);
   color: var(--just-white);
-  height: 6rem;
-  margin-top: auto;
   font-size: 1.4rem;
 }
 
