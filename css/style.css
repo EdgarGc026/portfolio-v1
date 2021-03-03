@@ -95,7 +95,7 @@ a {
 /* Creando estilos globales */
 main {
   width: 100%;
-  background-color: var(--just-white);
+  background-color: var(--culture);
 }
 /* ---------- */
 
@@ -200,8 +200,7 @@ main .about-section {
 
 .me-info {
   font-size: 1.8rem;
-  font-weight: 400;
-  text-align: start;
+  text-align: justify;
   color: var(--just-white);
 }
 
@@ -331,14 +330,13 @@ main .project-technology,
 }
 
 .project-live {
-  font-size: 1.4rem;
+  font-size: 1.8rem;
   font-weight: 400;
   font-style: italic;
 }
 
 .project-description {
-  font-size: 2rem;
-  font-weight: 400;
+  font-size: 1.6rem;
 }
 
 /* Creando la seccion del contacto */
@@ -411,6 +409,8 @@ form textarea {
   max-height: 30rem;
   min-height: 15rem;
   border-radius: 0.5rem;
+  font-size: 1.6rem;
+  font-family: "Roboto", sans-serif, helvetica;
 }
 
 form input[type="text"]:focus,
@@ -428,7 +428,7 @@ form input[type="submit"] {
   background: var(--blue-crayola);
   color: #e1e9fa;
   font-size: 1.4rem;
-  font-family: "Roboto", Arial, sans-serif, helvetica;
+  font-family: "Roboto", sans-serif, helvetica;
   border-radius: 0.3rem;
   border: none;
   float: right;
